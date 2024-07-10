@@ -26,6 +26,11 @@ Successfully patched idme to enable ADB.
 
 Note that the script is showing the currently enabled fos_flags in the provided IDME and not the flags after the patch.
 
+Write patched IDME back to the device.
+```
+python mtk.py w preloader idme_patched.bin --parttype=boot2
+```
+
 ## Getting ADB authorisation
 On some devices, the `FOS_FLAGS_ADB_AUTH_DISABLE` flag doesn't actually disable ADB authorisation.
 
